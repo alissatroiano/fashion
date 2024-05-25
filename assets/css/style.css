@@ -1,0 +1,97 @@
+html, body {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    background-color: #ffe7e2;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    overflow: scroll;
+}
+
+#heroContent {
+    z-index: 25000;
+}
+
+i#hero-down {
+    position: absolute;
+    z-index: 30000;
+    font-size: 3rem;
+    color: #ea868f;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
+
+}
+
+h1.hero {
+    color: #ea868f;
+}
+
+.hero-subtitle {
+    color: #666;
+    letter-spacing: 1px;
+    font-weight: 200;
+}
+
+img.bg {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    height: 115%;
+    width: auto;
+    opacity: 0;
+}
+
+@media (min-aspect-ratio: 4/3) {
+    img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media (max-aspect-ratio: 3/5) {
+    img {
+        left: 30%;
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 50%;
+    left: 30%;
+    max-width: 50%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+    font-size: 10vh;
+    font-weight: bold;
+    pointer-events: none;
+    text-transform: uppercase;
+}
+
+@media (max-aspect-ratio: 1/1) {
+    .overlay {
+        left: 50%;
+        width: 90%;
+        max-width: 90%;
+    }
+}
+
+@media (max-aspect-ratio: 3/5) {
+    .overlay {
+        font-size: 5vh;
+    }
+}
