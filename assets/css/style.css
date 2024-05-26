@@ -1,12 +1,11 @@
 html, body {
-    overflow: hidden;
     padding: 0;
     margin: 0;
     background-color: #ffe7e2;
 }
 
 canvas {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -22,34 +21,50 @@ canvas {
     overflow: scroll;
 }
 
+.coming-soon {
+    font-family: 'futura-pt', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #b93b7a;
+}
+
 #heroContent {
     z-index: 25000;
 }
 
+#section {
+    min-height: 100vh;
+    display: flex;
+
+}
 i#hero-down {
-    position: absolute;
+    margin-top: 50px;
     z-index: 30000;
     font-size: 3rem;
-    color: #ea868f;
-    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
-    0px -4px 10px rgba(255,255,255,0.3);
-
+    color: #eeb71f;
 }
 
 h1.hero {
-    color: #ea868f;
+    font-family: 'futura-pt', sans-serif;
+    font-weight: 500;
+    color: #ea86b8;
+    text-shadow: 0px 3px 10px #f3a1ca;
 }
 
 .hero-subtitle {
-    color: #666;
+    color: #312e29;
+    font-family: 'futura-pt', sans-serif;
     letter-spacing: 1px;
     font-weight: 200;
 }
 
 img.bg {
     position: absolute;
+    max-width: 100%;
+    height: auto;
     top: 50%;
-    left: 70%;
+    left: 60%;
     transform: translate(-50%, -50%);
     height: 115%;
     width: auto;
