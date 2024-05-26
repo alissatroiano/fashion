@@ -310,3 +310,7 @@ function render() {
 
     requestAnimationFrame(render);
 }
+
+canvas.addEventListener("click", function(e) {
+    window.open("main.html");
+});
